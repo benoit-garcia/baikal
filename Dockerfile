@@ -20,7 +20,7 @@ COPY        nginx.conf /etc/nginx/nginx.conf
 COPY        php-fpm.conf /etc/php5/fpm/php-fpm.conf
 
 # Expose HTTP port
-EXPOSE 80
+EXPOSE      80
 
 # Last but least, unleach the daemon!
-ENTRYPOINT ["/usr/bin/supervisord"]
+ENTRYPOINT  ["/usr/bin/supervisord"]
